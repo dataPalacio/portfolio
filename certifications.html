@@ -9,22 +9,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <style>
+        [id^="detalhe-cert"] {
+            scroll-margin-top: 120px;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f9fafb;
-            color: #222;
+            font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0a1419 0%, #1a2832 100%);
+            color: #e8f4f8;
             margin: 20px;
             line-height: 1.6;
         }
         h1, h2, h3, h4 {
             font-weight: 700;
-            color: #0ea5e9;
+            color: #64ffda;
             margin-top: 1.5em;
             margin-bottom: 0.5em;
         }
         h2 {
             font-size: 1.8rem;
-            border-bottom: 2px solid #0ea5e9;
+            border-bottom: 2px solid #64ffda;
             padding-bottom: 0.3em;
         }
         h3 {
@@ -35,28 +41,26 @@
             font-size: 1.2rem;
             margin-top: 1em;
         }
+        p, ul, li, strong, em {
+            color: #e8f4f8;
+        }
         p {
             font-size: 1rem;
             margin-bottom: 1em;
-            color: #222;
         }
         ul {
             margin-left: 1.5em;
             margin-bottom: 1.5em;
             font-size: 1rem;
-            color: #222;
         }
         li {
             margin-bottom: 0.5em;
-            color: #222;
         }
         strong {
             font-weight: 600;
-            color: #1e293b;
         }
         em {
             font-style: italic;
-            color: #64748b;
         }
         .ver-mais-btn {
             display: inline-block;
@@ -70,24 +74,24 @@
             cursor: pointer;
             margin: 1em 0 0.5em 0;
             transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-            box-shadow: 0 2px 8px 0 rgba(30,41,59,0.07);
+            box-shadow: 0 2px 8px 0 rgba(100, 255, 218, 0.07);
             text-decoration: none;
             text-align: center;
         }
         .ver-mais-btn:hover, .ver-mais-btn:focus {
-            background: #0ea5e9;
-            color: #fff;
+            background: #64ffda;
+            color: #0a1419;
             outline: none;
             text-decoration: underline;
         }
         .cert-details {
-            background: #f1f5f9;
+            background: #1a2832;
             border-radius: 6px;
             margin-top: 0.5em;
             margin-bottom: 1.2em;
             padding: 1em 1.2em;
-            box-shadow: 0 2px 8px 0 rgba(30,41,59,0.04);
-            border-left: 4px solid #0ea5e9;
+            box-shadow: 0 2px 8px 0 rgba(100,255,218,0.04);
+            border-left: 4px solid #64ffda;
             animation: fadeIn 0.3s;
         }
         @keyframes fadeIn {
@@ -96,7 +100,7 @@
         }
         hr {
             border: none;
-            border-top: 1px solid #cbd5e1;
+            border-top: 1px solid #64ffda;
             margin: 2em 0;
         }
     </style>
@@ -118,24 +122,33 @@
     <main>
         <section>
             <h2>Certificações</h2>
+            <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 32px; text-align: center;">Colecionei certificações que são meu “kit de ferramentas” para domar dados: Python, SQL, Power BI e muito mais. Cada uma me ajudou a virar o jogo, transformando dados bagunçados em insights que fazem a diferença.
+
+</p>
             <section class="cert-gallery">
                 <div class="cert-item">
+                    <img src="https://palacio-data.gitbook.io/data/~gitbook/image?url=https%3A%2F%2F3713167634-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FiL7JC6ij2eIy8KiuXhIQ%252Fuploads%252FIRXlWRGvteFxsfVEEaHn%252Fcertificate-analise-de-dados-com-linguagem-python-6167bcb6e32fc338a25c_page-0001.jpg%3Falt%3Dmedia%26token%3D8013420e-78cc-4a24-abbb-2e915d37775b&width=768&dpr=4&quality=100&sign=8a1ef1c8&sv=2" alt="Certificado Python" class="cert-img" style="width:200px; height:auto; border-radius:8px; cursor:pointer; margin-bottom:12px; box-shadow:0 2px 8px #0003; object-fit:cover; transition:box-shadow 0.2s, transform 0.2s;" onclick="expandCert(this)">
                     <h3>Análise de dados com linguagem Python</h3>
                     <p>Curso prático com projetos reais, focado em <strong>SQL, Python e Power BI</strong>.</p>
-                    <a class="ver-mais-btn" href="#detalhe-cert1" onclick="event.preventDefault();document.getElementById('detalhe-cert1').scrollIntoView({behavior:'smooth'});">Ver detalhes</a>
                 </div>
                 <div class="cert-item">
+                    <img src="https://palacio-data.gitbook.io/data/~gitbook/image?url=https%3A%2F%2F3713167634-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FiL7JC6ij2eIy8KiuXhIQ%252Fuploads%252FFDvWBgyE1aLaaP50Otmx%252Fcertificate-analise-de-dados-com-microsoft-power-bi-e-clinica-de-bi-6167bd56e32fc33dad444877_page-0001.jpg%3Falt%3Dmedia%26token%3D0e40a3ce-b134-408c-b4fc-931105410794&width=768&dpr=4&quality=100&sign=75eab7ed&sv=2" alt="Certificado Power BI" class="cert-img" style="width:200px; height:auto; border-radius:8px; cursor:pointer; margin-bottom:12px; box-shadow:0 2px 8px #0003; object-fit:cover; transition:box-shadow 0.2s, transform 0.2s;" onclick="expandCert(this)">
                     <h3>Análise de dados com Power BI e clínica de BI</h3>
                     <p>Exploração avançada do Power BI, modelagem de dados e criação de dashboards para tomada de decisão.</p>
-                    <a class="ver-mais-btn" href="#detalhe-cert2" onclick="event.preventDefault();document.getElementById('detalhe-cert2').scrollIntoView({behavior:'smooth'});">Ver detalhes</a>
                 </div>
                 <div class="cert-item">
+                    <img src="https://palacio-data.gitbook.io/data/~gitbook/image?url=https%3A%2F%2F3713167634-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FiL7JC6ij2eIy8KiuXhIQ%252Fuploads%252FJIzVQtjv5KRowwmaZktT%252Fcertificate-sql-para-data-science-gustavo-felipe-palacio_page-0001.jpg%3Falt%3Dmedia%26token%3Dc8da08bb-e9cc-476e-bf7c-b849fa5e15e7&width=768&dpr=4&quality=100&sign=ad1dcad4&sv=2" alt="Certificado SQL" class="cert-img" style="width:200px; height:auto; border-radius:8px; cursor:pointer; margin-bottom:12px; box-shadow:0 2px 8px #0003; object-fit:cover; transition:box-shadow 0.2s, transform 0.2s;" onclick="expandCert(this)">
                     <h3>SQL para data science</h3>
                     <p>Domínio de SQL para análise, otimização de queries e integração com machine learning.</p>
-                    <a class="ver-mais-btn" href="#detalhe-cert3" onclick="event.preventDefault();document.getElementById('detalhe-cert3').scrollIntoView({behavior:'smooth'});">Ver detalhes</a>
                 </div>
             </section>
         </section>
+        <div style="display:flex; flex-direction:column; align-items:center; margin: 24px 0 0 0;">
+            <span aria-label="Conteúdo mais abaixo" title="Conteúdo mais abaixo" style="display:inline-block; margin-bottom:4px; color:#64ffda; font-size:2.2rem;">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
+            <span style="color:#64ffda; font-size:1rem; opacity:0.8;">Veja mais detalhes das certificações abaixo</span>
+        </div>
 
         <section class="cert-detalhes-completos" style="max-width: 800px; margin: 2em auto;">
             <h2 id="detalhe-cert1" tabindex="-1">Análise de dados com linguagem Python</h2>
@@ -216,5 +229,38 @@
             </div>
         </div>
     </footer>
+</div>
+<div id="cert-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(10,20,25,0.92); z-index:9999; align-items:center; justify-content:center;">
+  <img id="cert-modal-img" src="" alt="Certificado Expandido" style="max-width:700px; width:90vw; height:auto; border-radius:16px; box-shadow:0 8px 32px #000; background:#fff;">
+</div>
+<script>
+// Expansão de certificado
+function expandCert(img) {
+  const modal = document.getElementById('cert-modal');
+  const modalImg = document.getElementById('cert-modal-img');
+  modalImg.src = img.src;
+  modal.style.display = 'flex';
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') document.getElementById('cert-modal').style.display = 'none';
+});
+document.getElementById('cert-modal').addEventListener('click', function() {
+  this.style.display = 'none';
+});
+</script>
+</div>
+<script>
+// Força rolagem suave e foco ao clicar em "Ver detalhes"
+document.querySelectorAll('.ver-mais-btn').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth' });
+      target.focus({ preventScroll: true });
+    }
+  });
+});
+</script>
 </body>
 </html>
