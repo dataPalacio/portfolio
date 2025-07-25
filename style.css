@@ -1,0 +1,69 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f1a2b;
+    color: #e0f7fa;
+}
+
+header {
+    background-color: #004d40;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #a7ffeb;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #a7ffeb;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px;
+    border-bottom: 1px solid #004d40;
+}
+
+section h2 {
+    color: #64ffda;
+}
+
+.cert-gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cert-item {
+    background-color: #263238;
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px;
+}
+
+.cert-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #004d40;
+    color: #a7ffeb;
+}
