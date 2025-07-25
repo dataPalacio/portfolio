@@ -1,22 +1,74 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hard Skills | Data Palacio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb;
+            color: #9b8585;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            color: #0ea5e9;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+        h2 {
+            font-size: 1.8rem;
+            border-bottom: 2px solid #0ea5e9;
+            padding-bottom: 0.3em;
+        }
+        h3 {
+            font-size: 1.4rem;
+            margin-top: 1em;
+        }
+        h4 {
+            font-size: 1.2rem;
+            margin-top: 1em;
+        }
+        p {
+            font-size: 1rem;
+            margin-bottom: 1em;
+            color: #f9fafb;
+        }
+        ul {
+            margin-left: 1.5em;
+            margin-bottom: 1.5em;
+            font-size: 1rem;
+            color: #f9fafb;
+        }
+        li {
+            margin-bottom: 0.5em;
+            color: #f9fafb;
+        }
+        strong {
+            font-weight: 600;
+            color: #f9fafb;
+        }
+        em {
+            font-style: italic;
+            color: #f9fafb;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Data Palacio</h1>
-        <nav>
+        <nav role="navigation" aria-label="Menu principal">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Hard Skills</a></li>
+                <li><a href="skills.html" class="active">Hard Skills</a></li>
                 <li><a href="projects.html">Projetos</a></li>
                 <li><a href="articles.html">Artigos</a></li>
                 <li><a href="certifications.html">Certificações</a></li>
@@ -24,59 +76,84 @@
         </nav>
     </header>
     <main>
+        <h2>Minhas Habilidades</h2>
+
         <section>
-            <h2>Hard Skills</h2>
-            <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 32px; text-align: center;">Tecnologias e ferramentas que domino para análise de dados</p>
-
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/excel/excel-original.svg" alt="Excel" />
-                    <span>Excel</span>
-                    <p style="margin-top: 12px; font-size: 0.9rem; opacity: 0.8; text-align: center;">Análise avançada, dashboards e automação com VBA</p>
-                </div>
-                <div class="skill-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
-                    <span>Python</span>
-                    <p style="margin-top: 12px; font-size: 0.9rem; opacity: 0.8; text-align: center;">Pandas, NumPy, Matplotlib, Seaborn e Scikit-learn</p>
-                </div>
-                <div class="skill-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" />
-                    <span>SQL</span>
-                    <p style="margin-top: 12px; font-size: 0.9rem; opacity: 0.8; text-align: center;">Consultas complexas, otimização e modelagem de dados</p>
-                </div>
-                <div class="skill-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/powerbi/powerbi-original.svg" alt="Power BI" />
-                    <span>Power BI</span>
-                    <p style="margin-top: 12px; font-size: 0.9rem; opacity: 0.8; text-align: center;">Dashboards interativos, DAX e modelagem dimensional</p>
-                </div>
-            </div>
-
-            <div style="margin-top: 48px;">
-                <h3 style="color: #64ffda; font-size: 1.8rem; margin-bottom: 24px;">Competências Técnicas Detalhadas</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
-                    <div style="background: linear-gradient(135deg, rgba(100, 255, 218, 0.1) 0%, rgba(79, 195, 247, 0.1) 100%); padding: 24px; border-radius: 12px; border-left: 4px solid #64ffda;">
-                        <h4 style="color: #64ffda; margin-bottom: 12px;">Análise de Dados</h4>
-                        <p>Limpeza, transformação e análise exploratória de dados. Identificação de padrões, tendências e insights acionáveis.</p>
-                    </div>
-                    <div style="background: linear-gradient(135deg, rgba(100, 255, 218, 0.1) 0%, rgba(79, 195, 247, 0.1) 100%); padding: 24px; border-radius: 12px; border-left: 4px solid #4fc3f7;">
-                        <h4 style="color: #4fc3f7; margin-bottom: 12px;">Visualização</h4>
-                        <p>Criação de dashboards interativos e relatórios visuais que facilitam a tomada de decisão estratégica.</p>
-                    </div>
-                </div>
-            </div>
+            <h3>Python</h3>
+            <p><em>Principais conhecimentos e experiências em Python:</em></p>
+            <ul>
+                <li><strong>Conceitos Dominados:</strong>
+                    <ul>
+                        <li>Manipulação de dados com <em>pandas</em> (leitura de CSVs, filtros, merge de DataFrames).</li>
+                        <li>Visualização de dados com <em>matplotlib</em> e <em>seaborn</em> (gráficos de barras, linhas, dispersão).</li>
+                        <li>Estatística básica com <em>numpy</em> (média, mediana, desvio padrão).</li>
+                        <li>Automação de tarefas (leitura de arquivos em loop, exportação de relatórios em Excel).</li>
+                    </ul>
+                </li>
+                <li><strong>Projetos Aplicados:</strong>
+                    <ul>
+                        <li>Análise exploratória de dados (EDA) de uma base de imóveis para identificar outliers.</li>
+                        <li>Script para consolidar planilhas de diferentes departamentos em um único relatório.</li>
+                        <li>Pré-processamento de dados para um modelo de regressão linear simples (normalização).</li>
+                    </ul>
+                </li>
+                <li><strong>Ferramentas utilizadas:</strong> Git / Github, VS code + Data Wrangler, Jupyter Notebook, SQLAlchemy (Python)</li>
+            </ul>
+        </section>
+        <section>
+            <h3>SQL</h3>
+            <p><em>Competências em SQL para manipulação e consulta de dados:</em></p>
+            <ul>
+                <li><strong>Conceitos Dominados:</strong>
+                    <ul>
+                        <li>Consultas básicas a avançadas (SELECT, JOINS, GROUP BY, subqueries).</li>
+                        <li>Criação e manipulação de tabelas (CREATE TABLE, INSERT, UPDATE).</li>
+                        <li>Funções de agregação (SUM, COUNT, AVG) e filtragem com WHERE/HAVING.</li>
+                    </ul>
+                </li>
+                <li><strong>Projetos Aplicados:</strong>
+                    <ul>
+                        <li>Limpeza de dados em um dataset de e-commerce (remoção de duplicatas, tratamento de NULLs).</li>
+                        <li>Análise de churn de clientes usando CASE WHEN e CTEs.</li>
+                        <li>Integração de múltiplas tabelas para calcular métricas de vendas por região.</li>
+                    </ul>
+                </li>
+                <li><strong>Ferramentas utilizadas:</strong> MySQL, Postgree, SQLAlchemy (Python)</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Power BI</h3>
+            <p><em>Experiência em visualização e análise de dados com Power BI:</em></p>
+            <ul>
+                <li><strong>Conceitos Dominados:</strong>
+                    <ul>
+                        <li>Transformação de dados no Power Query (pivotar tabelas, divisão de colunas).</li>
+                        <li>Criação de medidas e colunas calculadas com DAX (SUMX, CALCULATE, RELATED).</li>
+                        <li>Design de dashboards interativos (gráficos, slicers, hierarquias de dados).</li>
+                        <li>Conexão a fontes diversas (Excel, SQL Server, APIs).</li>
+                    </ul>
+                </li>
+                <li><strong>Projetos Aplicados:</strong>
+                    <ul>
+                        <li>Dashboard de monitoramento de vendas com segmentação por categoria e período.</li>
+                        <li>Relatório de satisfação de clientes com drill-down por região demográfica.</li>
+                        <li>Modelagem de dados para relacionar tabelas de produtos e pedidos.</li>
+                    </ul>
+                </li>
+            </ul>
         </section>
     </main>
     <footer>
         <div class="footer-content">
             <div class="footer-social">
-                <a href="https://www.linkedin.com/in/seu-linkedin" target="_blank" title="LinkedIn" class="footer-icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.968v5.699h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595z" fill="#64ffda"/></svg>
+                <a href="https://www.linkedin.com/in/gfpalacio/" target="_blank" title="LinkedIn" class="footer-icon" rel="noopener" aria-label="LinkedIn">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" width="24" height="24" style="vertical-align:middle;filter:grayscale(1);">
                 </a>
-                <a href="https://medium.com/@seu-medium" target="_blank" title="Medium" class="footer-icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M2.01 6.545c-.019-.197.056-.391.203-.532l1.982-2.373v-.5h6.225l4.805 10.548 4.225-10.548h6.225v.5l-1.7 1.63c-.146.112-.217.295-.188.475v12.5c-.029.18.042.363.188.475l1.66 1.63v.5h-8.775v-.5l1.72-1.67c.169-.169.169-.219.169-.475v-10.08l-4.805 12.725h-.65l-5.6-12.725v8.56c-.046.334.066.67.3.91l2.24 2.72v.5h-6.725v-.5l2.24-2.72c.23-.24.34-.576.29-.91v-9.04z" fill="#64ffda"/></svg>
+                <a href="https://medium.com/@datapalacio" target="_blank" title="Medium" class="footer-icon" rel="noopener" aria-label="Medium">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/medium.svg" alt="Medium" width="24" height="24" style="vertical-align:middle;filter:grayscale(1);">
                 </a>
-                <a href="https://github.com/seu-github" target="_blank" title="GitHub" class="footer-icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 0c-6.627 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.527.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.649.242 2.873.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.371.823 1.102.823 2.222v3.293c0 .322.218.694.825.576 4.765-1.589 8.2-6.085 8.2-11.386 0-6.627-5.373-12-12-12z" fill="#64ffda"/></svg>
+                <a href="https://github.com/dataPalacio" target="_blank" title="GitHub" class="footer-icon" rel="noopener" aria-label="GitHub">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" width="24" height="24" style="vertical-align:middle;filter:grayscale(1);">
                 </a>
             </div>
             <div class="footer-copy">

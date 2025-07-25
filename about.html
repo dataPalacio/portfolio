@@ -1,21 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre | Data Palacio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sobre Mim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb;
+            color: #9b8585;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            color: #0ea5e9;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+        h2 {
+            font-size: 1.8rem;
+            border-bottom: 2px solid #0ea5e9;
+            padding-bottom: 0.3em;
+        }
+        h3 {
+            font-size: 1.4rem;
+            margin-top: 1em;
+        }
+        h4 {
+            font-size: 1.2rem;
+            margin-top: 1em;
+        }
+        p {
+            font-size: 1rem;
+            margin-bottom: 1em;
+            color: #f9fafb;
+        }
+        ul {
+            margin-left: 1.5em;
+            margin-bottom: 1.5em;
+            font-size: 1rem;
+            color: #f9fafb;
+        }
+        li {
+            margin-bottom: 0.5em;
+            color: #f9fafb;
+        }
+        strong {
+            font-weight: 600;
+            color: #f9fafb;
+        }
+        em {
+            font-style: italic;
+            color: #f9fafb;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Data Palacio</h1>
-        <nav>
+        <nav role="navigation" aria-label="Menu principal">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html" class="active">About</a></li>
                 <li><a href="skills.html">Hard Skills</a></li>
                 <li><a href="projects.html">Projetos</a></li>
                 <li><a href="articles.html">Artigos</a></li>
@@ -25,38 +76,39 @@
     </header>
     <main>
         <section>
-            <h2>Sobre mim</h2>
-            <div style="display: flex; flex-direction: column; gap: 24px; font-size: 1.1rem; line-height: 1.8;">
-                <p>Olá! Meu nome é <strong style="color: #64ffda;">Gustavo Palacio</strong>, também conhecido como <strong style="color: #64ffda;">Data Palacio</strong>. Sou Analista de Dados com experiência em análise, visualização e interpretação de dados para apoiar decisões estratégicas.</p>
+            <h2>Sobre Mim</h2>
+            <p>Oi, sou o <strong>Gustavo</strong>, um apaixonado pela área de dados que está em transição de carreira. Minha formação é em <strong>Engenharia Civil</strong>, e acumulo <strong>6 anos de experiência no setor de TI</strong>, com atuação em áreas como:</p>
+            <ul>
+                <li><strong>Telecomunicações</strong></li>
+                <li><strong>Sistemas de provedores de internet</strong></li>
+                <li><strong>Microinformática</strong></li>
+            </ul>
+            <p>Nos últimos tempos, tenho me dedicado ao estudo de análise de dados, por meio de cursos que abrangem:</p>
+            <ul>
+                <li><strong>Python:</strong> Focado na análise e manipulação de dados.</li>
+                <li><strong>SQL:</strong> Para extração e modelagem de dados.</li>
+                <li><strong>Power BI:</strong> Voltado à criação de visualizações e relatórios.</li>
+            </ul>
+            <p>Meu objetivo é criar conteúdos que mostrem como aplicar a análise de dados no contexto empresarial, destacando o valor da tomada de decisões baseadas em evidências. Estou motivado a colocar meus conhecimentos em prática e colaborar em projetos que demonstrem o impacto estratégico do uso de dados.</p>
+            <p>Fico à disposição para conversar sobre oportunidades e explorar juntos o universo da análise de dados!</p>
 
-                <p>Tenho paixão por transformar dados em insights valiosos e contribuir para o crescimento das organizações. Minha jornada na área de dados começou com a curiosidade de entender padrões e tendências que podem impactar positivamente os negócios.</p>
+            <h2>Por que Análise de Dados?</h2>
+            <p>Minha escolha pela área de Análise de Dados nasceu da curiosidade sobre como as informações influenciam nossas decisões e moldam as interações do dia a dia. Os dados revelam padrões e tendências essenciais, que ajudam empresas a:</p>
+            <ul>
+                <li><strong>Direcionar campanhas.</strong></li>
+                <li><strong>Monitorar atividades.</strong></li>
+                <li><strong>Otimizar resultados</strong> em diversas áreas, como negócios e saúde.</li>
+            </ul>
+            <p>Com isso, ficou claro para mim que entender e interpretar dados é fundamental para atuar de forma estratégica em um mundo cada vez mais orientado por informações.</p>
 
-                <p>Ao longo da minha carreira, desenvolvi expertise em diversas ferramentas e tecnologias, sempre buscando a excelência na entrega de soluções analíticas que agregam valor real às empresas.</p>
-
-                <div style="background: linear-gradient(135deg, rgba(100, 255, 218, 0.1) 0%, rgba(79, 195, 247, 0.1) 100%); padding: 24px; border-radius: 12px; border-left: 4px solid #64ffda; margin-top: 32px;">
-                    <h3 style="color: #64ffda; margin-bottom: 16px;">Missão Profissional</h3>
-                    <p style="margin: 0; font-style: italic;">Transformar dados complexos em insights claros e acionáveis, capacitando organizações a tomar decisões estratégicas baseadas em evidências sólidas.</p>
-                </div>
-            </div>
+            <h2>Ferramentas e Habilidades</h2>
+            <p>Durante minha trajetória de formação, explorei diversas ferramentas e sigo adquirindo habilidades importantes:</p>
+            <ul>
+                <li><strong>Python:</strong> Utilizei bibliotecas como <em>Pandas</em> e <em>NumPy</em> para manipulação e análise de dados.</li>
+                <li><strong>SQL:</strong> Aprendi a realizar consultas e extrair informações de bancos de dados.</li>
+                <li><strong>Power BI:</strong> Desenvolvi relatórios visuais que facilitam a compreensão das histórias por trás dos números.</li>
+            </ul>
         </section>
     </main>
-    <footer>
-        <div class="footer-content">
-            <div class="footer-social">
-                <a href="https://www.linkedin.com/in/seu-linkedin" target="_blank" title="LinkedIn" class="footer-icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.968v5.699h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595z" fill="#64ffda"/></svg>
-                </a>
-                <a href="https://medium.com/@seu-medium" target="_blank" title="Medium" class="footer-icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M2.01 6.545c-.019-.197.056-.391.203-.532l1.982-2.373v-.5h6.225l4.805 10.548 4.225-10.548h6.225v.5l-1.7 1.63c-.146.112-.217.295-.188.475v12.5c-.029.18.042.363.188.475l1.66 1.63v.5h-8.775v-.5l1.72-1.67c.169-.169.169-.219.169-.475v-10.08l-4.805 12.725h-.65l-5.6-12.725v8.56c-.046.334.066.67.3.91l2.24 2.72v.5h-6.725v-.5l2.24-2.72c.23-.24.34-.576.29-.91v-9.04z" fill="#64ffda"/></svg>
-                </a>
-                <a href="https://github.com/seu-github" target="_blank" title="GitHub" class="footer-icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 0c-6.627 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.527.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.649.242 2.873.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.371.823 1.102.823 2.222v3.293c0 .322.218.694.825.576 4.765-1.589 8.2-6.085 8.2-11.386 0-6.627-5.373-12-12-12z" fill="#64ffda"/></svg>
-                </a>
-            </div>
-            <div class="footer-copy">
-                <p>&copy; 2024 Gustavo Palacio | Data Palacio. Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>
